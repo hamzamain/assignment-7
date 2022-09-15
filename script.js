@@ -104,6 +104,8 @@ const closeModal = () => {
 };
 
 const start = () => {
+  const currentTime = new Date().getTime();
+  console.log(currentTime);
   // If already started, do not start again
   if (startTime) return;
 
@@ -136,7 +138,8 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
-  const timeSpent = (currentTime - startTime) / 1000;
+  // console.log(currentTime);
+  const timeSpent = Math.ceil((currentTime - startTime) / 1000);
 
   document.getElementById("show-time").innerHTML = `${
     startTime ? timeSpent : 0
