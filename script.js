@@ -84,7 +84,7 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+    <p>You took: <span class="bold">${Math.ceil(timeTaken)}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
@@ -104,8 +104,8 @@ const closeModal = () => {
 };
 
 const start = () => {
-  const currentTime = new Date().getTime();
-  console.log(currentTime);
+  // const currentTime = new Date().getTime();
+  // console.log(currentTime);
   // If already started, do not start again
   if (startTime) return;
 
