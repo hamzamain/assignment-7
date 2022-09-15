@@ -56,29 +56,75 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">storage?</th>
+                    <th scope="col">Accessibility</th>
+                    <th scope="col">Expire</th>
+                    <th scope="col">Remove</th>
+                    <th scope="col">capacity</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">Local Storage</th>
+                    <td>All window</td>
+                    <td>Never</td>
+                    <td>Manualy</td>
+                    <td>10Mb</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <th scope="row">Session Storage</th>
+                    <td>Private to Tab</td>
+                    <td>On Tab Close</td>
+                    <td>Auto</td>
+                    <td>5Mb</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button p-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              what is the difference between Global scope and block scope?
+            </button>
+          </h2>
+          <div class=""></div>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Scope?</th>
+                    <th scope="col">declare</th>
+                    <th scope="col">Accessibility</th>
+                    <th scope="col">Let and const</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Block Scope</th>
+                    <td>Inside a function or if-else {}</td>
+                    <td>only on in the block{}</td>
+                    <td>Private let and const</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <th scope="row">Global Scope</th>
+                    <td>Out side of any function or if-else condition</td>
+                    <td>outside and inside of block{}</td>
+                    <td>Global let and Const</td>
                   </tr>
                 </tbody>
               </table>
