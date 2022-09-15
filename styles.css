@@ -11,6 +11,22 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 .box-container {
   width: 70%;
   margin: 0 auto;

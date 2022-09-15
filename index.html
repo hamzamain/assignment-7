@@ -14,29 +14,41 @@
     />
   </head>
   <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
-    <div id="show-time">0 seconds</div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="title"><img src="./logo.png" /></h1>
+        <div id="show-time">0 seconds</div>
 
-    <div class="box-container">
-      <div id="question"></div>
+        <div class="box-container">
+          <div id="question"></div>
 
-      <div id="display" class="inactive"></div>
+          <div id="display" class="inactive"></div>
 
-      <div class="buttons">
-        <button id="starts">START</button>
-      </div>
+          <div class="buttons">
+            <button id="starts">START</button>
+          </div>
 
-      <div class="divider-container">
-        <div class="line"></div>
-        <h1 class="title2">History</h1>
-        <div class="line"></div>
-      </div>
-      <div id="histories"></div>
-    </div>
+          <div class="divider-container">
+            <div class="line"></div>
+            <h1 class="title2">History</h1>
+            <div class="line"></div>
+          </div>
+          <div id="histories"></div>
+        </div>
 
-    <div id="countdown"></div>
-    <div id="modal-background" class="hidden"></div>
-    <div id="result" class="hidden"></div>
+        <div id="countdown"></div>
+        <div id="modal-background" class="hidden"></div>
+        <div id="result" class="hidden"></div>
+      </section>
+    </main>
 
     <script src="./history.js"></script>
     <script src="./script.js"></script>
