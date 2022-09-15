@@ -276,5 +276,6 @@ button {
 
   .card h3 {
     margin-bottom: 10px;
+    color: lightgreen;
   }
 }
