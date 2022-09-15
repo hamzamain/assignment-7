@@ -50,6 +50,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -59,6 +60,7 @@ const typeController = (e) => {
 };
 
 const validate = (key) => {
+  console.log(key);
   if (key === questionText[userText.length - 1]) {
     return true;
   }
